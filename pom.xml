@@ -31,7 +31,6 @@
             <version>2.7.7</version>
         </dependency>
 
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
