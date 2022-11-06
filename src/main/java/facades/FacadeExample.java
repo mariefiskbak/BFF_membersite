@@ -61,15 +61,15 @@ public class FacadeExample {
     }
     
     //TODO Remove/Change this before use
-//    public long getRenameMeCount(){
-//        EntityManager em = getEntityManager();
-//        try{
-//            long renameMeCount = (long)em.createQuery("SELECT COUNT(r) FROM RenameMe r").getSingleResult();
-//            return renameMeCount;
-//        }finally{
-//            em.close();
-//        }
-//    }
+    public long getRenameMeCount(){
+        EntityManager em = getEntityManager();
+        try{
+            long renameMeCount = (long)em.createQuery("SELECT COUNT(r) FROM RenameMe r").getSingleResult();
+            return renameMeCount;
+        }finally{
+            em.close();
+        }
+    }
     
     public List<RenameMeDTO> getAll(){
         EntityManager em = emf.createEntityManager();
@@ -78,10 +78,10 @@ public class FacadeExample {
         return RenameMeDTO.getDtos(rms);
     }
     
-//    public static void main(String[] args) {
-//        emf = EMF_Creator.createEntityManagerFactory();
-//        FacadeExample fe = getFacadeExample(emf);
-//        fe.getAll().forEach(dto->System.out.println(dto));
-//    }
+    public static void main(String[] args) {
+       // emf = EMF_Creator.createEntityManagerFactory();
+        //FacadeExample fe = getFacadeExample(emf);
+        //fe.getAll().forEach(dto->System.out.println(dto));
+    }
 
 }
