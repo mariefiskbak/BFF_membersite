@@ -20,7 +20,8 @@ import java.util.logging.Logger;
  */
 public class Utility {
     private static Gson gson = new GsonBuilder().create();
-    
+
+
     public static void printAllProperties() {
             Properties prop = System.getProperties();
             Set<Object> keySet = prop.keySet();
